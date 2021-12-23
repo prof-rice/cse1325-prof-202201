@@ -1,4 +1,9 @@
-# Compiled class file
+# Backup files
+*~
+*.bak
+*.backup
+
+# Compiled Java class file
 *.class
 
 # Log file
@@ -10,7 +15,7 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Java Package Files #
 *.jar
 *.war
 *.nar
@@ -21,3 +26,36 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# C++ Prerequisites
+*.d
+
+# C++ Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# C++ Precompiled Headers
+*.gch
+*.pch
+
+# C++ Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
