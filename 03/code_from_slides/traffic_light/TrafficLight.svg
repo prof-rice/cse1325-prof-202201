@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="189px" preserveAspectRatio="none" style="width:288px;height:189px;background:#FFFFFF;" version="1.1" viewBox="0 0 288 189" width="288px" zoomAndPan="magnify"><defs><filter height="300%" id="f3683koldknij" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[a07046c479290317f8cce38738edece0]
+class TrafficLight--><rect codeLine="4" fill="#FEFECE" filter="url(#f3683koldknij)" height="168.0156" id="TrafficLight" style="stroke:#A80036;stroke-width:1.5;" width="174" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="65" x="61.5" y="23.1387">TrafficLight</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="180" y1="30.9688" y2="30.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="119" x="13" y="45.1792">-operating  : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="68" x="13" y="57.9839">-light : Color</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="180" y1="64.5781" y2="64.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="13" y="78.7886">+TrafficLight()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="13" y="91.5933">+isOperating() : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="13" y="104.3979">+turnOn()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="56" x="13" y="117.2026">+turnOff()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="13" y="130.0073">+thisColor() : Color</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="13" y="142.812">+nextColor() : Color</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="13" y="155.6167">+toString() : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="162" x="13" y="168.4214">+operatingToString() : String</text><!--MD5=[18eee71c88ab61f27581b8cbdd3ef5ee]
+class Color--><rect codeLine="16" fill="#FEFECE" filter="url(#f3683koldknij)" height="78.3828" id="Color" style="stroke:#A80036;stroke-width:1.5;" width="58" x="216" y="52"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="32" x="229" y="68.1387">Color</text><line style="stroke:#A80036;stroke-width:1.5;" x1="217" x2="273" y1="75.9688" y2="75.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="43" x="222" y="90.1792">+green</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="46" x="222" y="102.9839">+yellow</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="28" x="222" y="115.7886">+red</text><line style="stroke:#A80036;stroke-width:1.5;" x1="217" x2="273" y1="122.3828" y2="122.3828"/><!--MD5=[25071b4ccdc6dacaf869ef6b7604ce5b]
+link TrafficLight to Color--><path codeLine="21" d="M181.002,91 C192.502,91 204.001,91 215.501,91 " fill="none" id="TrafficLight-Color" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[38d5bf3f70f5202a1bc9d2edad96fe3b]
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class TrafficLight {
+-operating  : boolean
+-light : Color
++TrafficLight()
++isOperating() : boolean
++turnOn()
++turnOff()
++thisColor() : Color
++nextColor() : Color
++toString() : String
++operatingToString() : String
+}
+enum Color {
++green
++yellow
++red
+}
+TrafficLight -right- Color
+@enduml
+
+PlantUML version 1.2021.10beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

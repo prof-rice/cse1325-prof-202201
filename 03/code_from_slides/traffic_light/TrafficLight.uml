@@ -1,0 +1,31 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class TrafficLight {
+-operating  : boolean
+-light : Color
++TrafficLight()
++isOperating() : boolean
++turnOn()
++turnOff()
++thisColor() : Color
++nextColor() : Color
++toString() : String
++operatingToString() : String
+}
+enum Color <<enum>> {
++green
++yellow
++red
+}
+
+class Main {
++ main(args : String[]) 
+}
+
+TrafficLight -right- Color
+Main -right- TrafficLight
+
+@enduml
+
