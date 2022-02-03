@@ -17,7 +17,7 @@
         // Check for correct letter in correct position
         for(int i=0; i<5; ++i) {
             if(check.charAt(i) == actual.charAt(i)) {  // Correct letter!
-                result.setCharAt(solution.charAt(i), i);
+                result.setCharAt(Character.toUpperCase(solution.charAt(i)), i);
                 check.setCharAt(' ', i);
                 actual.setCharAt(' ', i);
             }
