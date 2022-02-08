@@ -1,0 +1,34 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class WordList {
+  -{static} words : String[];
+  +{static} getWord() : String;
+}
+class Word {
+  -letters : char[5]
+  +Word(word : String)
+  +charAt(position : int) : char
+  +setCharAt(c : char, position : int)
+  +toString() : String
+  -validateChar(c : char);
+  -validateMarker(c : char);
+  -validatePosition(position : int);
+}
+class Puzzle {
+  -solution : Word
+  -solved : boolean
+  +Puzzle(solution : String)
+  +isSolved() : boolean
+  +compareGuess(guess : String) : String
+}
+class Quint {
+  +main(args : String[])
+}
+
+Quint - Puzzle
+WordList -- Quint
+Word -- Puzzle
+
+@enduml
