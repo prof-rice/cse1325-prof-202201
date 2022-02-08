@@ -10,16 +10,9 @@ abstract class Critter {
     protected int timer;
 
     public static void main(String[] args) {
-        ArrayList<Critter> critters = new ArrayList<> () {{
-            add(new Cow(13));
-            add(new Dog(11));
-            add(new Dog(9));
-            add(new Cow(7));
-            add(new Chicken(5));
-            add(new Dog(3));
-            add(new Chicken(2));
-
-        }};
+        ArrayList<Critter> critters = new ArrayList<>();        critters.add(new Cow(13));
+        critters.add(new Dog(11));    critters.add(new Dog(9)); critters.add(new Cow(7));
+        critters.add(new Chicken(5)); critters.add(new Dog(3)); critters.add(new Chicken(2)); 
         
         TimeUnit ms = TimeUnit.MILLISECONDS;
 

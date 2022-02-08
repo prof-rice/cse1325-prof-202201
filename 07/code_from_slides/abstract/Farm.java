@@ -1,18 +1,12 @@
 import java.util.concurrent.TimeUnit;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Farm {
     public static void main(String[] args) {
-        ArrayList<Critter> critters = new ArrayList<> () {{
-            add(new Cow(13));
-            add(new Dog(11));
-            add(new Dog(9));
-            add(new Cow(7));
-            add(new Chicken(5));
-            add(new Dog(3));
-            add(new Chicken(2));
-
-        }};
+         ArrayList<Critter> critters = new ArrayList<>(
+            Arrays.asList(new Cow(13),    new Dog(11), new Dog(9),  new Cow(7),
+                          new Chicken(5), new Dog(3),  new Chicken(2)));
         
         TimeUnit ms = TimeUnit.MILLISECONDS;
 
