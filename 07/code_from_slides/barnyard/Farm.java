@@ -6,7 +6,7 @@ public class Farm {
     public static void main(String[] args) {
         // We have a couple of options for initializing our ArrayList.
         // The shortest is to use Arrays.asList, which creates a List from any
-        // parameter type that ArrayList will accept as its constructor parameter.
+        // parameter type, which ArrayList will accept as its constructor parameter.
         // But it's also fine to just create the ArrayList and the use the add
         // method to populate it!
         ArrayList<Critter> critters = new ArrayList<>(

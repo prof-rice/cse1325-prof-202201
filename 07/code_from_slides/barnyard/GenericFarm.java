@@ -3,17 +3,11 @@ import java.util.ArrayList;
 
 public class GenericFarm {
     public static void main(String[] args) {
-        // The double-brackets create an "anonymous inner class",
-        // which we sometimes use to create an immutable arraylist
-        // initialized in place. 
-        // Otherwise, just declare and initialize in separate statements.
-        ArrayList<Critter> critters = new ArrayList<> () {{
-            add(new Critter(13));
-            add(new Critter(9));
-            add(new Critter(3));
-            add(new Critter(2));
-
-        }};
+        ArrayList<Critter> critters = new ArrayList<> ();
+        critters.add(new Critter(13));
+        critters.add(new Critter(9));
+        critters.add(new Critter(3));
+        critters.add(new Critter(2));
         
         TimeUnit ms = TimeUnit.MILLISECONDS;
 
