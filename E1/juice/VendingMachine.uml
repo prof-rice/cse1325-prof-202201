@@ -1,0 +1,34 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+enum Fruit {
+    apple
+    grape
+    orange
+}
+class Juice {
+  -fruit : Fruit
+  -ounces : int
+  +Juice(fruit : Fruit, ounces : int)
+  +toString() : String
+}
+
+class VendingMachine {
+  -products : ArrayList<Juice>
+  +VendingMachine()
+  +add(juice : Juice)
+  +buy(productIndex : int)
+  +printMenu()
+  +{static} main(args : String[])
+}
+
+VendingMachine *- Juice
+Juice - Fruit
+
+@enduml
+

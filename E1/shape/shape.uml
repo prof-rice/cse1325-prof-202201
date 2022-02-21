@@ -1,0 +1,36 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+interface Shape {
++ getArea() : double
+}
+
+class Rectangle  {
+- width : double
+- height : double
++ Rectangle(width : double, height : double)
++ getArea() : double
+}
+
+class Square  {
++ Square(side : double)
+}
+
+class Circle  {
+- radius : double
++ Circle(radius : double)
++ getArea() : double
+}
+
+class Main {
++ {static} main(args : String[])
+}
+
+Shape <|.. Rectangle
+Shape <|.. Circle
+Rectangle <|-- Square
+Main - Shape
+
+@enduml
+
