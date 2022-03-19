@@ -1,4 +1,4 @@
-package shelter;
+            package shelter;
 
 public class Dog extends Animal {
     public Dog(DogBreed breed, String name, Gender gender, int age) {
