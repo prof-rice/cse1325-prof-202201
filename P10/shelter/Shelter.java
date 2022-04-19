@@ -19,6 +19,7 @@ public class Shelter {
     public Shelter(BufferedReader br) throws IOException {
         this.name = br.readLine();
         animals = new ArrayList<>();
+        clients = new ArrayList<>();
         int numAnimals = Integer.parseInt(br.readLine());
         while(numAnimals-- > 0) {
             String f = br.readLine();
