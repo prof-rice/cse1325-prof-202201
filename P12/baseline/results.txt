@@ -1,0 +1,72 @@
+====================
+HOMEWORK P12 RESULTS
+====================
+
+Spring 2022
+
+
+FULL CREDIT
+===========
+
+QUESTION 1: How many hashes did you use as FindMinHash's parameter to achieve a 30 to 45 second runtime: 
+
+Number of Hashes (example: 750,000,000): 
+Number of Seconds (example: 30.870s): 
+
+Note: We're only interested in the "real" seconds for this question.
+
+
+QUESTION 2: Provide the full ``time`` output for your program, with 1 to 16 threads. **Ensure that the result is identical for all 16 runs.** You can run all of these with a single bash command if you like (replace 750000000 with your Number of Hashes from QUESTION 1): 
+
+``for i in {1..16} ; do time java FindMinHash 750000000 $i ; done``
+
+Example Timing (first 2 of 16 runs only on Antares):
+
+ricegf@antares$ for i in {1..16} ; do time java FindMinHash 750000000 $i ; done
+
+Thread-0    (ID  13) searching               0 to     750,000,000
+Best word "NETWORKING'S DEBBIE" has hashCode 4
+
+real	0m35.033s
+user	0m35.207s
+sys	0m0.256s
+
+Thread-0    (ID  13) searching               0 to     375,000,000
+Thread-1    (ID  14) searching     375,000,001 to     750,000,000
+Best word "NETWORKING'S DEBBIE" has hashCode 4
+
+real	0m17.538s
+user	0m34.826s
+sys	0m0.289s
+
+
+YOUR Timing:
+
+
+
+
+QUESTION 3: Does adding more threads continue to speed up the program? Do more threads ever slow down the program slightly?  Why or why not?
+
+
+
+
+QUESTION 4: Does adding more threads increase the "system load", or is it constant regardless of the number of threads?  Why?
+
+
+
+
+BONUS
+=====
+
+QUESTION 5: Time your thread pool version of FindMinHash as you did for the full credit version. Is a thread pool faster, slower, or roughly equivalent in performance? 
+
+
+YOUR Timing:
+
+
+
+
+QUESTION 6: Compare the full credit and bonus solutions. Which do you believe is more supportable over a long lifetime of evolving hardware and environments?
+
+
+
