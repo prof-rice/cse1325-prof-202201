@@ -1,0 +1,63 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+package shelter {
+
+abstract class Animal {
+  - name : String
+  - gender : Gender
+  - age : int
+  + Animal(name : String, gender : Gender, age : int)
+  + {abstract} String family();
+  + {abstract} String breed();
+  + toString() : String
+}
+class Dog {
+  - breed : DogBreed
+  + Dog(breed : DogBreed, name : String, gender : Gender, age : int)
+  + String family();
+  + String breed();
+  + toString() : String
+}
+class Cat {
+  - breed : CatBreed
+  + Cat(breed : CatBreed, name : String, gender : Gender, age : int)
+  + String family();
+  + String breed();
+  + toString() : String
+}
+class Shelter {
+  - name : String
+  - animals : ArrayList<Animal>
+  + Shelter(name : String)
+  + addAnimal(animal : Animal)
+  + toString() : String 
+}
+
+}
+
+class Mass {
+  + {static} main(args : String[])
+}
+
+class MainWin extends JFrame {
+  - shelter : Shelter
+  - data : JLabel
+  + Mainwin(title : String)
+  + onNewDogClick()
+  + onNewCatClick()
+  + onAboutClick()
+  + onQuitClick()
+  - updateDisplay()
+}
+
+Mass - MainWin
+MainWin - Shelter
+Shelter - Animal
+Animal <|-- Dog
+Animal <|-- Cat
+
+
+@enduml
+
